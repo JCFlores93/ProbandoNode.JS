@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1
+		a(href="/")=titulo
+
+	div.contenedor
+	- for(var i=0; i< camisetas.lenght ; ++i) {
+		div.item
+			p fsdf
+			h2 Camiseta #{camisetas[i].color}
+			img(src="./"+ camisetas[i].imagen,width="250")
+			small Precio:#{camisetas[i].precio} dólares
+	- }
+
+	
